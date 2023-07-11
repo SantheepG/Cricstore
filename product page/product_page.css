@@ -1,0 +1,422 @@
+* {
+    font-family: Tahoma;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+/*-----------------------------------------------------------------------------------------------*/
+body{
+  background-color: white;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#logo img {
+    width: 250px;
+    height: 80px;
+    position: absolute;
+    left: 2%;
+    top: 5px;
+    z-index: 1;
+}
+
+#navbar {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #545255; /*upper part background color*/
+    display: grid;
+    place-items: center;
+}
+
+#navbar ul { /*styling unorder list set*/
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px; /*make distance from image margin to nav bar*/ 
+}
+
+#navbar ul li { /*styling list set*/
+    font-size: 20px;
+    margin: 0 45px;
+    margin-right: 30px; /*distance between nav buttons*/
+}
+
+#navbar ul li a { 
+    text-decoration: none;
+    color: #000; /*navigation bar button text color*/
+    padding: 10px; 
+    background-color: rgb(217, 172, 223); /*navigation bar button background color*/
+    border-radius: 25px; /*buttons corner rounding*/
+}
+
+#navbar ul li a:hover
+{
+    background-color: #720c91;
+    color: #dcddeb;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*------------------------ANCHOR TAGS--------------------*/
+.imgs{
+  margin: 5px;
+  margin-top: 50px;
+  width: 100%
+  position: static;
+  background-color: white;
+  padding-left: 25px;
+}
+.img0{
+  width: 550px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img0:hover{
+  width: 560px;
+
+}
+.img1{
+  width: 200px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img1:hover{
+  width: 210px;
+
+}
+.img2{
+  width: 200px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img2:hover{
+  width: 210px;
+
+}
+.img3{
+  width: 200px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img3:hover{
+  width: 210px;
+}
+.img4{
+  width: 200px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img4:hover{
+  width: 210px;
+}
+
+.anchor-container{
+	width: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  list-style: none;
+  position: sticky;
+  top: 0;
+  border-bottom: solid 5px #abc;
+  box-shadow: 0px 5px 5px 0px #000066;
+  background-color: #000066;
+}
+
+.link{
+    color: white;
+    padding: 5px 8px;
+    margin: 5px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.link:hover{
+	 font-size: 15px;
+   padding:18px;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 3px red;
+}
+
+.link1{
+  color: white;
+  padding: 5px 8px;
+  margin: 5px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.link1:hover{
+	font-size: 15px;
+  padding:18px;
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 3px red;
+ }
+
+ /*CART VIEW*/
+.cart-view {
+  padding-left: 65%;
+
+}
+.cart-content {
+  color: black;
+  display: none;
+  position: absolute;
+  width: 500px;
+  box-shadow: 0px 0px 10px 0px red;
+  border-width: 1px;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-color: rgba(0,0,0,0.1); 
+}
+.cart-content:hover{
+	box-shadow: 0px 0px 1px 0px red;
+}
+.show {
+    display: block;
+}
+
+/*---------INSIDE CART--------*/
+.top{
+ 	text-align: center;
+ 	font-weight: bold;
+  padding: 4px;
+  border: solid 1px red;
+  border-radius: 5px;
+}
+.head-sec{
+  color: black;
+  padding: 70px;
+}
+.products{
+	float: left;
+	width: 50%;
+}
+.price{
+	
+	float: left;
+  	width: 50%;
+}
+.totalprice{
+	text-align: center;
+}
+.bottom a {
+  display: block; 
+}
+.pay{
+  padding: 3px;
+  outline: 0;
+  color: white;
+  background-color: #006600;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 15px;
+  float: left;
+  opacity: 0.8;
+  border-radius: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+.pay:hover {
+  opacity: 1;
+  font-size: 16px;
+}
+.clear{
+  color: white;
+  background-color: red;
+  border-color: red;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 15px;
+  float: left;
+  opacity: 0.8;
+  border-radius: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+.clear:hover {
+  opacity: 1;
+  font-size: 16px;
+}
+
+/*-------PRODUCT SECTION-----*/
+.category{
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border-bottom: solid 5px #abc;
+
+  
+  
+}
+.grid-container {
+  display: flex;
+  margin-top: 10px;
+  padding: 50px;
+  gap: 15px;
+  background-color: white;
+}
+.grid{
+  background-color: white;
+  border: solid 1px #cfcfcf; 
+  border-radius: 15px;
+  box-shadow: 0 5px 0px 0 red;
+  width: 100%
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  font-family: Century Gothic;
+  transition: 0.5s;
+
+}
+.grid:hover{
+  box-shadow: 0 0px 1px 0px red;
+
+}
+.btn {
+  border: solid #E45555;
+  border-radius: 15px;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #E45555;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.btn:hover {
+ 
+    opacity: 1;
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 0px red;
+}
+
+/*PERSONAL INFO*/
+.personalinfo {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-left: 500px; 
+  padding-right: 500px;
+  padding-top:100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+
+}
+.personalinfo input[type="text"]{
+  padding: 5px;
+  width: 100%;
+}
+.personalinfo-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.personalinfo button{
+  margin: 5px;
+}
+
+/*PROCEED TO PAY*/
+
+.invoice {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+/* INVOICE CONTENT */
+.invoice-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 35%;
+  border-radius: 5px;
+}
+
+.ProceedtoPay{
+  color: white;
+  background-color: green;
+  border: solid 1px green;
+  border-radius: 5px;
+  width: 35%;
+  margin-left: 495px;
+  padding: 10px;
+  cursor: pointer;
+}
+.cancelPay{
+  color: white;
+  background-color: red;
+  border: solid 1px red;
+  border-radius: 5px;
+  width: 35%;
+  margin-left: 495px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.socialmedia{
+  color: white;
+  text-align: center;
+ padding-top: 15px;
+  background-color: #004c99;
+  width: 100%;
+  height: 165px;
+}
+
+.dev{
+  cursor: pointer;
+  color: white;
+  border: solid #004c99;
+  background-color: #004c99;
+  transition: 0.3s;
+}
+
+.dev:hover{
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 3px red;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Query Form</title>
+        <!--navigation bar css link-->
+        <link rel="stylesheet" href="navbarstyle.css">
+        <link rel="stylesheet" href="querystyle.css">
+        <script src="query_script.js"></script>
+        <link rel="icon" type="image/x-icon" href="product page/cricstore.ico">
+    </head>
+    
+    <body>
+        <div id="container1">
+            <!--logo-->
+            <div id="logo">
+                <a href="homepage.html"><img src="cricstore.png" alt="cric store logo"></a> <!--Cric Store logo image--> 
+            </div>
+            
+            <!--navigation bar-->
+            <div id="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>   <!--linked-->
+                    <li><a href="product_page.html">Store</a></li>
+                    <li><a href="query.html">Queries</a></li>   <!--linked-->
+                    <li><a href="QuizStart.html">Quiz</a></li>
+                    <li><a href="extrapage.html">Blog</a></li>
+                    <!--Student Details Button-->
+                    <li><a href="#">Student Details</a></li>
+                </ul>   
+            </div>
+
+            <div id="formArea">
+                
+                    <h2>Query Form</h2>
+                    <!--Name Input field-->
+                    <label for="fullName">Full Name: </label><br>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" size="30"><br>
+
+                    <!--Email input field-->
+                    <label for="email">Email address: </label><br>
+                    <input type="text" name="email" id="email" placeholder="Email address" size="30"><br>
+
+                    <!--Pop up list-->
+                    <label for="subject">Query Subject: </label><br>
+                    <select name="Subject" id="subject">
+                        <option value="delivery">Delivery</option>
+                        <option value="warranty">Warranty</option>
+                        <option value="bulkPriceDiscount">Bulk Price Discount</option>
+                        <option value="other">Other</option>
+                    </select> <br>
+
+                    <!--Textarea-->
+                    <label for="feedback">Query Details: </label> <br>
+                    <textarea name="feedback" id="feedback" placeholder="Details" cols="31" rows="10"></textarea> <br>
+
+                    <!--View Query button-->
+                    <button name="viewQueryBtn" onclick="message()" id="viewQueryBtn">View Query</button>
+
+                    <!--Check button-->
+                    <button name="checkBtn" onclick="checkMessage()" id="checkBtn">Check</button>
+
+                
+            </div>
+            
+        </div>
+        
+        <div class="footer"><br>
+            <a href="query_form_developer.html" class="editor">Page Editor</a>
+            <a href="#" class="fb"><img src="fb_logo.png" alt="facebook logo" width="50" height="50"></a>
+            <a href="#" class="insta"><img src="instagram_logo.png" alt="facebook logo" width="50" height="50"></a>
+        </div>
+    </body>
+</html>

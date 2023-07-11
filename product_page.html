@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="product page/product_page.css">
+	<link rel="icon" type="image/x-icon" href="product page/cricstore.ico">
+	
+	<title> CricStore </title>
+</head>
+
+<body>
+	<!--LOGO AND NAVIGATION BAR BY STUDENT 2-->
+	<div class="header">
+		<div id="logo">
+			<a href="index.html"><img src="product page/cricstore.png" alt="cric store logo"></a>
+		</div>
+	</div>
+
+  <div id="navbar">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="product_page.html">Store</a></li>
+      <li><a href="query.html">Queries</a></li>
+      <li><a href="QuizStart.html">Quiz</a></li>
+      <li><a href="extrapage.html">Blog</a></li>
+      <li><a href="#">Student Details</a></li>
+    </ul>
+  </div>
+            <!--IMAGES IN THE TOP -->
+  <div class="imgs">
+    <img class="img0" src="product page/img0.jpg" alt="Cricketer">
+    <img class="img1" src="product page/img1.jpg" alt="Cricketer">
+     <img class="img2" src="product page/img2.jpg" alt="Cricketer">
+     <img class="img3" src="product page/img3.jpg" alt="Cricketer">
+     <img class="img4" src="product page/img4.jpg" alt="Cricketer">
+  </div>
+
+  				<!--ANCHOR CONTAINER-->
+  <ul class="anchor-container">
+  	<li class="anchor-item">&#183;<a href="#outfits" class="link">Outfits</a></li>
+  	<li class="anchor-item">&#183;<a href="#acc" class="link">Accessories</a></li>
+  	<li class="anchor-item">&#183;<a class="link1" onclick="DisplayCart()">Cart (<span id="total-count">0</span>)</a>&#183;</li>
+  </ul>
+
+  				 <!--CART-->
+
+  <div class="cart-view" id="cart-view">
+  	<div id="myCart" class="cart-content">
+  		
+  		<div class="top">
+  			<div> <span class="head-sec">Product Name</span><span class="head-sec">Price</span></div>
+  			<div class="products" id="product-show"></div>
+  			<div class="price" id="price-show"></div>
+  		</div>
+  		<div class="bottom">
+  			<div class="totalprice" id="totalprice">Your cart is empty</div>
+  			<a class="pay" onclick="CheckOut()">Checkout</a>
+  			<button class="clear" id="clear" onclick="ClearTotal()">Clear</button>
+  		</div>
+
+  	</div>
+  </div>
+
+  <div class="category" id="outfits">Outfits</div>
+  
+  <div class="grid-container">
+    
+    <div class="grid">
+      <img src="product page/SLJersey.jpg" alt="SL cricket Jersey">
+      <p>Sri Lankan Cricket Jersey (M)</p>
+      <hr>
+      <p>Rs 1,300</p>
+      <p><button name="SL Jersey(M)" value="1300" class="btn" id="btn1">Add to Cart <span class="qty" id="qty1"></span></button></p>
+    </div>
+
+    <div class="grid">
+      <img src="product page/IndianJersey.jpg" alt="Indian Jersey">
+      <p>Indian Cricket Jersey (L)</p>
+      <hr>
+      <p>Rs 1,500</p>
+      <p><button  name="Indian Jersey(L)" value="1500" class="btn" id="btn2">Add to Cart <span class="qty" id="qty2"></span></button></p>
+    </div>
+
+  </div>
+
+  <div class="category" id="acc">Accessories</div>
+  <div class="grid-container">
+    
+    <div class="grid">
+      <img src="product page/KookaburraBall.jpg" alt="A Ball">
+      <p>Kookaburra Turf Cricket Ball</p>
+      <p>Rs 7 200</p>
+      <p><button name="Kookaburra Ball" value="7200" class="btn" id="btn3">Add to Cart <span class="qty" id="qty3"></span></button></p>
+    </div>
+
+    <div class="grid">
+      <img src="product page/580Cricketbat.jpg" alt="Cricket bat">
+      <p>NewBalance DC580 Cricket bat</p>
+      <p>Rs 10 000</p>
+      <p><button  name="DC 580 bat" value="10000" class="btn" id="btn4">Add to Cart <span class="qty" id="qty4"></span></button></p>
+    </div>
+  </div>
+
+  <div class="personalinfo" id="personalinfo"> 
+  <div class="personalinfo-content" id="personalinfo-content">Personal Details
+    <p><label>Name : </label><input type="text" name="customer_name" id="customer_name" placeholder="* Enter your name"></p>
+
+    <p><label>Email : </label><input type="text" name="email" id="email" placeholder="* Your E-mail id"></p>
+    <button class ="btn" id="submit" onclick="formValidation()">Place order</button>
+    <br>
+    <button class="btn" id="cancalpay" onclick="cancelPay()">Cancel</button>
+  </div>
+  </div>
+      
+<div id="invoice" class="invoice">
+  <!-- INVOICE CONTENT -->
+  <div class="invoice-content" id="invoice-content"></div>
+  <button class="ProceedtoPay">Proceed to pay</button>
+  <button class="cancelPay" onclick="cancelPay()">Cancel</button>
+</div>
+
+<div class="socialmedia">Follow us on Social media
+  <div><img src="product page/socialmedia.png" alt="SocialMedia" style="height: 70px; width: 170px"></div>
+  <div>2022 © CricStore (Pvt) Ltd</div>
+   <a class="dev" href="product_editor.html">Developer</a>
+</div>
+
+
+
+ 
+
+<script src="product page/product_page.js"></script>
+
+</body>
+</html>

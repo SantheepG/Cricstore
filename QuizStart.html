@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<link rel="stylesheet" type="text/css" href="CSS/quizstart.css">
+		<link rel="icon" type="image/x-icon" href="product page/cricstore.ico">
+
+	<style>
+	body {
+	background:url('image/cricket2.jpg');
+	background-size: cover;
+	font-size: 25px;
+	font-family: Lucida Console, Monospace;
+	color: LightGray;
+	opacity: 0.9;
+	}
+	</style>
+		<title>CricStore | Quiz</title>
+	</head>
+
+	<body>
+		<br>
+
+		<a href="Main.html"><img src="image/cricstore.png" width="190px height="190px lign="left" hspace="100"></a>
+		
+	  
+				<br><br><br><br><br>
+	
+	<!--marqee for the user info about the quiz-->
+	<div  id="body">
+        <marquee   loop="1" direction="right" behavior="slide" scrollAmount="10">
+			<h3>This quiz contains <span>10 questions</span></h3>
+			<h3>You have <span>3 minutes</span> to answer them</h3>
+			<h3>Every correct answer carries <span1>2 points<span1></h3>
+			<h3>Each wrong answer will cost you <span2>1 point<span2></h3>
+		</marquee>
+	</div>
+
+	<!--timer display-->	
+		<divalign="center">
+			<p id="timer"> </p>
+			<a href="Quiz.html"><input id= "button" type="button" value="Continue to the Quiz" ; ></a>
+		</div>	
+		
+	<!--transition to the quiz at the end of time-->	
+		<meta http-equiv="refresh" content="15; URL='Quiz.html'">
+
+	<script type="text/javascript">
+	<!--Timer calculation -->
+			var timer;
+            var sec = 15;
+            var sec2;
+            {
+                timer = setInterval(function(){ 
+                    sec--;
+                     if(sec == 00){  
+                        sec = 15;
+						
+                    }
+                     document.getElementById("timer").innerHTML =  "QUIZ WILL LOAD IN " +  sec + " seconds." ;  
+                    },1000);
+         		 }
+				sec2 = 15 - sec;
+				
+	<!--font change button display -->				
+	function increaseFontSize(objId){
+				obj= document.getElementById(objId);
+				currentSize=parseFloat(obj.style.fontSize);
+				obj.style.fontSize=(currentSize + .1) + "em"; 
+			}
+				
+	function decreaseFontSize(objId){
+				obj= document.getElementById(objId);
+				currentSize=parseFloat(obj.style.fontSize);
+				obj.style.fontSize=(currentSize - .1) + "em"; 
+			}
+	</script>
+		<br>
+
+		<hr>
+		<hr>
+	
+	</body>
+
+</html> 

@@ -1,0 +1,108 @@
+
+
+ external css for badmintonQuiz page 
+css for body in the main html 
+	
+
+ tooltip logo hover 
+.tooltip {
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    
+    background-color: MidnightBlue;
+    color: OldLace;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+
+    /* Position the tooltip */
+  bottom: 150%;
+  left: 50%;
+  margin-top: 150px;
+  margin-left: -80px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* timer */	
+#time {
+	width: 25%;
+	height: 3%;
+	margin-left:38%;
+	border-radius: 20px;
+	padding: 5px 2px 1px 5px;
+	background:#404040;
+	font-size: 24px;
+	color: WhiteSmoke ;
+	text-align: center;
+	font-family: Lucida Console, Monospace;
+	}
+	
+/* heading */
+#C4{
+	font-size: 40px;
+	color: WhiteSmoke ;
+	font-family: Lucida Console, Monospace;;
+	text-align: center;
+	}
+	
+/* container for the quiz */
+#quiz {
+	width: 40%;
+	margin-left: 30%;
+	border-radius: 30px;
+	padding: 20px 20px 20px 20px;
+	background: #404040;
+	color: WhiteSmoke ;
+	opacity: 0.9;
+	}
+
+/* buttons */
+#button2 {
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	background: #808080;
+	color: WhiteSmoke ;
+	}
+
+#button2:hover {
+	background: #595959;
+	color: WhiteSmoke;
+	cursor: pointer;
+	}
+	
+a:hover{
+    background: #737373;
+	border-radius:40%;
+	}
+
+/* display after submit */	
+#after_submit{
+	visibility: hidden;
+	}
+
+/* gif */		
+#picture {
+	width: 375px;
+	height: 245px;
+	margin-left: 100px;
+	opacity: 1.0;
+	}
+
+/* footer */		
+footer {
+	width: 95%;
+	height: 35%;
+	border-radius: 30px;
+	padding: 5px 5px 8px 20px;
+	background: #808080;
+	color: WhiteSmoke;
+	
+	}
+	
+
